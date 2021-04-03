@@ -6,12 +6,18 @@ This is a game guardian (il2cpp Script) for you guys to use if you want to use t
 •Grab the offsets
 
 What to do?
+
 •Drag the il2cpp.so in a hex editor or whatever and go-to the offsets.
+
 •Copy the 8Byte hex value (or more, meaning copy another 8byte which adds up to 16bytes)
-Note: copying more bytes means that if the script searches your values and find like 50, 100+ searches, your game may end up modifying the wrong values and crash. So we need to add more bytes and more unt we get 1 or 2 searches.
+
+Note: copying more bytes means that if the script searches your values and find like 50, 100+ searches, your game may 
+modif the wrong values and crash. So we need to add more bytes and more unt we get 1 or 2 searches.
 
 Example: 
+
 name("libil2cpp.so")
+
 --original("EC E4 AA 03 0C E6 AA 03 00 48 2D E9 0D B0 A0 E1")
 
 --replaced("EC E4 AA 03 0C E6 AA 03 00 00 A0 E3 1E FF 2E E1")
