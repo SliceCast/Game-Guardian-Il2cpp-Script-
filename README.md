@@ -2,8 +2,11 @@
 This is a game guardian (il2cpp Script) for you guys to use if you want to use this without a mod menu. 
 
 #Requirements
+
 •Dump the game
+
 •Grab the offsets
+
 
 What to do?
 
@@ -12,7 +15,7 @@ What to do?
 •Copy the 8Byte hex value (or more, meaning copy another 8byte which adds up to 16bytes)
 
 Note: copying more bytes means that if the script searches your values and find like 50, 100+ searches, your game may 
-modif the wrong values and crash. So we need to add more bytes and more unt we get 1 or 2 searches.
+modify the wrong values and crash. So we need to add more bytes and more until we get 1 or 2 searches.
 
 Example: 
 
