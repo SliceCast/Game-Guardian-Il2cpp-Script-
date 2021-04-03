@@ -46,6 +46,9 @@ replaced("8C 4D CF 03 B0 12 CB 03 01 00 A0 E3 1E FF 2F E1")
 --replaced("EC 39 CE 03 BC 39 CE 03 00 F0 20 E3 1E FF 2F E1")
 
 
-Note: Some of these hex values are backwards aka reversed to get a more precise search value.
+Note: Some of these hex values are backwards aka reversed to get a more precise search value. If you reverse it, then you need to replace the hex by reversing it as well.
+
+
+
 
 Credits to: SliceCast & Pharaoh
