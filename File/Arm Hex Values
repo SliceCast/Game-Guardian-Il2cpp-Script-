@@ -66,3 +66,7 @@ RET = C0 03 5F D6
 E0 03 27 1E C0 03 5F D6 = Float 0
 00 F0 27 1E C0 03 5F D6 = Float 31
 C0 03 5F D6 = NOP CODE
+
+If you don't see the values you want, you can go to armconverter.com
+
+https.armconverter.com[Armconverter Site]
