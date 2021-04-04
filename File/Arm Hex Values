@@ -1,0 +1,68 @@
+//You can use these hex values to replace of your likings. 
+
+
+Armeabi-v7a (32-Bit):
+00 00 A0 E3 1E FF 2F E1 = False or number 0 BOOL/INT
+01 00 A0 E3 1E FF 2F E1 = True or number 1 BOOL/INT
+02 00 A0 E3 1E FF 2F E1 = Number 2 INT
+07 00 A0 E3 1E FF 2F E1 = Number 7 INT
+0A 00 A0 E3 1E FF 2F E1 = Number 10 INT
+0F 00 A0 E3 1E FF 2F E1 = Number 15 INT
+10 00 A0 E3 1E FF 2F E1 = Number 16 INT
+11 00 A0 E3 1E FF 2F E1 = Number 17 INT
+12 07 80 E3 1E FF 2F E1 = VALUE OF 12 Million or It can be used for health/ammo/armour/damage - INT
+DC 0F 00 E3 1E FF 2F E1 = VALUE 4060 INT
+DC OF OF E3 1E FF 2F E1 = VALUE 120000
+01 00 A0 E3 1E FF 2F E1 = VALUE 1 Also = True used for bool/int
+00 00 A0 E3 1E FF 2F E1 = Value 0 Also = False used for bool/int
+01 0A A0 E3 1E FF 2F E1 = 1000 INT
+01 08 A0 E3 1E FF 2F E1 = 10000 INT 
+01 02 A0 E3 1E FF 2F E1 = 10000000 INT
+C2 0A 64 60 00 00 00 02 = Speed Hack
+01 04 A0 E3 1E FF 2F E1 = 1000000
+0E 00 A0 E3 1E FF 2F E1 = 1000 INT
+F6 03 00 AA E1 23 00 91 = 1147 INT
+E0 7C 80 D2 C0 03 5F D6 = 999 INT
+E8 0D 0F E3 = 65000 INT
+01 00 A0 E3 = 01
+12 03 A0 E3 = 131072.0
+FF FF = Value of 65535 = Highest value 4 character hex code (65535 INT)
+12 07 80 E3 1e ff 2f e1 = 12 million/ INT
+7a 04 44 e3 1e ff 2f e1 = FLOAT/1000
+7A 04 04 E3 1E FF 2F E1 = FLOAT FREEZE/999
+FA 04 44 E3 1E FF 2F E1 = FLOAT/2000
+c6 02 44 e3 1e ff 2f e1 = FLOAT/99
+20 02 44 E3 1E FF 2F E1 = FLOAT/40
+C8 02 44 E3 1E FF 2F E1 = FLOAT/100
+00 F0 20 E3 1E FF 2F E1 = NOP CODE
+E7 03 00 E3 1E FF 2F E1 = 999 INT
+01 00 A0 E3 1E FF 2F E1 = 1/True
+00 00 A0 E3 1E FF 2F E1 = 0/False
+DC 0F 0F E3 1E FF 2F E1 = 65500/INT
+DC 0F 00 E3 1E FF 2F E1 = 4060 INT
+37 00 A0 E3 1E FF 2F E1 = 50 INT
+FF 00 A0 E3 1E FF 2F E1 = 255 INT
+EC 0F 43 E3 1E FF 2F E1 = 1.85 FLOAT
+C0 0F 43 E3 1E FF 2F E1 = 1.50 FLOAT
+64 00 A0 E3 = 64 INT
+1E FF 2F E1 = 100 INT
+
+ Arm Conversions (32-bit):
+1) int value of 65000: mov r0, #65000 / E80D0FE3
+2) int value of 1 or useful for Boolean return true: mov r0, #1 / 0100A0E3
+3) float value of 131072.0: mov r0, #0x48000000 / 1203A0E3
+4) MOV R0,# INT (for int hex codes)
+BX LR
+5) Movt R0, 0x0000 FLOAT (for float hex codes)
+BX LR
+6) MVN R0,# NEGATIVE INT (for negative int hex codes)
+BX LR
+Arm64-v8a (64-bit):
+RET = C0 03 5F D6
+20 00 80 D2 C0 03 5F D6 = 1 INT/True BOOL
+00 00 80 D2 C0 03 5F D6 = 0 INT/False BOOL
+00 71 82 D2 C0 03 5F D6 = 5000 INT
+00 10 2E 1E C0 03 5F D6 = Float 1
+E0 03 27 1E C0 03 5F D6 = Float 0
+00 F0 27 1E C0 03 5F D6 = Float 31
+C0 03 5F D6 = NOP CODE
